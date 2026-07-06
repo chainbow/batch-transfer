@@ -26,6 +26,7 @@ const envAddress = (key: string): `0x${string}` | undefined => {
 const BATCH_TRANSFER_CONTRACTS = {
   1: "0x890C2026Cc4D78571a8593b1Ccccde9E6b21F6b0",
   8453: "0xadd713eaE9B46Fd02D332433f533309e2f244C50",
+  56: "0xc96A0Af8b1B63431c4fEa28a84f4f86a44D4E53F",
 } as const;
 
 export const SUPPORTED_CHAINS: SupportedChain[] = [
@@ -62,7 +63,9 @@ export const SUPPORTED_CHAINS: SupportedChain[] = [
   },
   {
     chain: bsc,
-    batchTransferContract: envAddress("VITE_BATCH_TRANSFER_CONTRACT_56"),
+    batchTransferContract:
+      envAddress("VITE_BATCH_TRANSFER_CONTRACT_56") ??
+      BATCH_TRANSFER_CONTRACTS[56],
     tokens: [
       {
         symbol: "USDT",

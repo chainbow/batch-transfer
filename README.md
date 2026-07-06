@@ -62,8 +62,11 @@ Current deployments:
   - tx: `0x5cabb3b14ac2dc4247ca63a5fe985d8f04c6c469cc03dd25eb4e42ede0a1b7a3`
 - Base mainnet: `0xadd713eaE9B46Fd02D332433f533309e2f244C50`
   - tx: `0xd39f88319a3258d33ddc20bd0fe7ffb31fdb97ec629ba1c6e494bc0d831840e5`
-- BNB Smart Chain: not deployed yet — run the deploy script above with
-  `--rpc-url "$BSC_RPC_URL"`, then set `VITE_BATCH_TRANSFER_CONTRACT_56`.
+- BNB Smart Chain: `0xc96A0Af8b1B63431c4fEa28a84f4f86a44D4E53F`
+  - tx: `0x866d2c6d322f584b697089ab6ffbde2fc83e61fd039e568e9f2d5733ae4a62ed`
+  - block: `108390388`
+  - BscScan (source verified, Sourcify full match):
+    <https://bscscan.com/address/0xc96A0Af8b1B63431c4fEa28a84f4f86a44D4E53F#code>
 
 The app supports:
 
@@ -71,7 +74,7 @@ The app supports:
 | ---------------- | ------ | ----------- |
 | Ethereum mainnet | USDT, USDC | deployed |
 | Base mainnet     | USDC   | deployed    |
-| BNB Smart Chain  | USDT   | 未部署 (not deployed) |
+| BNB Smart Chain  | USDT   | deployed    |
 
 ## Input Format
 
